@@ -1,2 +1,5 @@
 evolution-mapper-backend/
 evolution-mapper-frontend/
+
+*.log
+*.pid
