@@ -117,16 +117,17 @@ while [[ $# -gt 0 ]]; do
     case "$1" in
         --plumber)
             PLUMBER=true
+            shift
             ;;
         --react)
             REACT=true
+            shift
             ;;
         *)
             error "Unknown option: $1"
             exit 1
             ;;
     esac
-    shift
 done
 
 # If neither flag is set, restart both
